@@ -9,7 +9,7 @@
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-blue-400">
+<body class="bg-linear-to-r from-slate-100 to-slate-200">
 
   <!-- ========== HEADER ========== -->
   <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-5 bg-slate-100">
@@ -52,9 +52,9 @@
               <line x1="3" x2="21" y1="12" y2="12" />
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
-            <svg class="hs-collapse-open:block hidden shrink-0 size-4 text-orange-500" xmlns="http://www.w3.org/2000/svg" width="24"
-              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
+            <svg class="hs-collapse-open:block hidden shrink-0 size-4 text-orange-500"
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M18 6 6 18" />
               <path d="m6 6 12 12" />
             </svg>
@@ -93,7 +93,7 @@
   <!-- ========== END HEADER ========== -->
 
   <!-- Hero -->
-  <div class="relative overflow-hidden">
+  <div class="relative overflow-hidden bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
 
       <div class="grid lg:grid-cols-3 items-center gap-4">
@@ -149,7 +149,7 @@
 
       <div class="">
         <div
-          class="px-10 py-3 lg:py-8 flex justify-center gap-x-6 sm:gap-x-12 lg:gap-x-24 bg-linear-to-tl from-red-500 to-yellow-500">
+          class="px-10 py-3 lg:py-8 flex justify-center gap-x-6 sm:gap-x-12 lg:gap-x-24 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400">
           <img src="{{ asset('images/beer.png') }}"
             class="py-3 lg:p-2 w-12 h-auto md:w-20 lg:w-28 mx-auto sm:mx-0 motion-translate-y-loop-25 drop-shadow-2xl drop-shadow-slate-500/50">
           <img src="{{ asset('images/burger.png') }}"
@@ -165,7 +165,241 @@
     </div>
 
     <div>
-      <img src="{{ asset('images/about-banner.png') }}" alt="">
+      <!-- Hero -->
+      <div class="relative overflow-hidden">
+
+        <div class="relative z-10">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+            <div class="max-w-2xl text-center mx-auto">
+              <p
+                class="inline-block text-lg font-medium bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">
+                About us - Why Shop Here
+              </p>
+
+              <!-- Title -->
+              <div class="mt-5 max-w-2xl">
+                <h1 class="block font-semibold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
+                  “Everyday Needs, One Stop Away”
+                </h1>
+              </div>
+              <!-- End Title -->
+
+              <div class="mt-5 max-w-3xl">
+                <p class="text-lg text-gray-600">local mini market committed to providing affordable groceries, quality
+                  canned goods, and daily essentials. Whether you’re restocking your pantry or picking up a quick snack,
+                  we’ve got you covered.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero -->
+    </div>
+    <!-- Slider -->
+    <div class="px-4 sm:px-6 lg:px-8 py-10">
+      <div data-hs-carousel='{
+      "loadingClasses": "opacity-0"
+    }' class="relative">
+        <div
+          class="hs-carousel relative overflow-hidden w-full h-120 md:h-[calc(100vh-106px)]  bg-gray-100 rounded-2xl">
+          <div
+            class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+            <!-- Item -->
+            <div class="hs-carousel-slide relative w-full">
+              <img src="{{ asset('images/shop-banner1.jpg') }}" alt="Shop Banner"
+                class="w-full h-120 md:h-[calc(100vh-106px)] object-cover object-center">
+
+              <div class="absolute bottom-0 left-0 w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+                <span class="block text-white">Jovy Store</span>
+                <span class="block text-white text-xl md:text-3xl bg-orange-400/50 px-2 rounded">
+                  Carries over 500 essential items — all in one convenient stop!
+                </span>
+                <div class="mt-5">
+                  <a href="#"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div class="hs-carousel-slide relative w-full">
+              <img src="{{ asset('images/shop-banner2.jpg') }}" alt="Shop Banner"
+                class="w-full h-120 md:h-[calc(100vh-106px)] object-cover object-center">
+
+              <div class="absolute bottom-0 left-0 w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+                <span class="block text-white">Jovy Store</span>
+                <span class="block text-white text-xl md:text-3xl bg-orange-400/50 px-2 rounded">
+                  Restock daily to keep your favorites fresh and ready anytime!
+                </span>
+                <div class="mt-5">
+                  <a href="#"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div class="hs-carousel-slide relative w-full">
+              <img src="{{ asset('images/shop-banner3.jpg') }}" alt="Shop Banner"
+                class="w-full h-120 md:h-[calc(100vh-106px)] object-cover object-center">
+
+              <div class="absolute bottom-0 left-0 w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+                <span class="block text-white">Jovy Store</span>
+                <span class="block text-white text-xl md:text-3xl bg-orange-400/50 px-2 rounded">
+                  Products come from trusted local suppliers — fresher and more affordable!
+                </span>
+                <div class="mt-5">
+                  <a href="#"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Item -->
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button type="button"
+          class="hs-carousel-prev hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-hidden focus:bg-white/20">
+          <span class="text-2xl" aria-hidden="true">
+            <svg class="shrink-0 size-3.5 md:size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z">
+              </path>
+            </svg>
+          </span>
+          <span class="sr-only">Previous</span>
+        </button>
+
+        <button type="button"
+          class="hs-carousel-next hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-e-2xl focus:outline-hidden focus:bg-white/20">
+          <span class="sr-only">Next</span>
+          <span class="text-2xl" aria-hidden="true">
+            <svg class="shrink-0 size-3.5 md:size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+              </path>
+            </svg>
+          </span>
+        </button>
+        <!-- End Arrows -->
+      </div>
+    </div>
+    <!-- End Slider -->
+    <div>
+      <!-- Card Section -->
+      <div class="max-w-6xl px-4 sm:px-6 lg:px-8 lg:py-6 mx-auto">
+        <!-- Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          <!-- Card -->
+          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+            href="#">
+            <div class="p-4 md:p-5">
+              <div class="flex gap-x-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-7 text-gray-800">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+
+                <div class="grow">
+                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
+                    Affordable Essentials
+                  </h3>
+                  <p class="text-sm text-gray-700">
+                    Groceries at budget-friendly prices
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- End Card -->
+
+          <!-- Card -->
+          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+            href="#">
+            <div class="p-4 md:p-5">
+              <div class="flex gap-x-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-7 text-gray-800">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+
+                <div class="grow">
+                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
+                    Wide Selection
+                  </h3>
+                  <p class="text-sm text-gray-700">
+                    From canned goods to fresh items
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- End Card -->
+
+          <!-- Card -->
+          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+            href="#">
+            <div class="p-4 md:p-5">
+              <div class="flex gap-x-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-7 text-gray-800">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+
+                <div class="grow">
+                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
+                    Convenient & Reliable
+                  </h3>
+                  <p class="text-sm text-gray-700">
+                    Easy access, hassle-free shopping
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- End Card -->
+
+          <!-- Card -->
+          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+            href="#">
+            <div class="p-4 md:p-5">
+              <div class="flex gap-x-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-7 text-gray-800">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+
+                <div class="grow">
+                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
+                    Affordable Essentials
+                  </h3>
+                  <p class="text-sm text-gray-700">
+                    Groceries at budget-friendly prices
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Grid -->
+      </div>
+      <!-- End Card Section -->
     </div>
   </div>
   <!-- End Clients -->
