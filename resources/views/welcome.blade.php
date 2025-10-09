@@ -83,6 +83,10 @@
           </div>
           <div>
             <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-yellow-400 focus:outline-hidden focus:text-gray-600"
+              href="#" href="#">Deal</a>
+          </div>
+          <div>
+            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-yellow-400 focus:outline-hidden focus:text-gray-600"
               href="#" href="#">Contact</a>
           </div>
         </div>
@@ -111,8 +115,13 @@
         <!-- Content -->
         <div class="lg:col-span-2 text-center lg:text-start">
           <!-- Title -->
-          <h1 class="block text-gray-900 text-4xl md:text-5xl lg:text-6xl italic">
-            Your Neighborhood Mini Market – Fresh, Affordable, Convenient.
+          <h1 class="block text-gray-900 text-4xl/12 md:text-5xl lg:text-6xl/18 italic">
+            Your Neighborhood Mini Market – <span
+              class="font-bold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">Fresh</span>,
+            <span
+              class="font-bold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">Affordable</span>,
+            <span
+              class="font-bold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">Convenient</span>.
           </h1>
 
           <!-- Subtitle -->
@@ -138,11 +147,11 @@
   </div>
   <!-- End Hero -->
   <!-- Clients -->
-  <div class="max-w-[85rem] py-10 lg:py-14 mx-auto bg-slate-100">
+  <div class="max-w-[85rem] pt-10 lg:pt-14 mx-auto bg-slate-100">
     <div class="pb-16">
       <!-- Title -->
       <div class="w-full lg:w-2/3 mx-auto text-center my-6">
-        <h2 class="text-gray-900">Trusted by food producers, local distributors, and thousands of Filipino households.
+        <h2 class="text-gray-900 text-lg">Trusted by food producers, local distributors, and thousands of Filipino households.
         </h2>
       </div>
       <!-- End Title -->
@@ -425,18 +434,19 @@
         </div>
       </div>
       <!-- End Hero -->
+
       <!-- Card Blog -->
-      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-2 mx-auto">
+      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:p-2 mx-auto">
         <!-- Grid -->
-        <div class="grid lg:grid-cols-2 gap-6">
+        <div class="grid lg:grid-cols-2 gap-6 lg:gap-12">
 
           <!-- Card -->
-          <a class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600" href="#">
+          <div
+            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
             <div
               class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
               <img class="size-full absolute top-0 start-0 object-cover"
-                src="https://images.unsplash.com/photo-1611625618313-68b87aaa0626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-                alt="Blog Image">
+                src="{{ asset('images/product/canned-goods.jpg') }}" alt="Blog Image">
             </div>
 
             <div class="absolute top-0 p-4 z-10">
@@ -452,43 +462,237 @@
               <div class="flex items-center justify-center text-white px-3 py-1">
                 <div class="inline-flex items-center font-extrabold">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-500">
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
                     <path fill-rule="evenodd"
                       d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                       clip-rule="evenodd" />
                   </svg>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-500">
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
                     <path fill-rule="evenodd"
                       d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                       clip-rule="evenodd" />
                   </svg>
-                  
+
                 </div>
               </div>
             </div>
 
-            <div class="absolute bottom-0 inset-x-0 z-10">
-              <div class="flex flex-col h-full p-4 sm:p-6">
+            <div class="absolute bottom-0 inset-x-0">
+              <div class="relative z-10 flex flex-col p-4 sm:p-6">
                 <h3
                   class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80">
-                  What CFR (Conversations, Feedback, Recognition) really is about
+                  Canned Goods
                 </h3>
-                <p class="mt-2 text-white/80">
-                  For a lot of people these days, Measure What Matters.
-                </p>
+                <div class="mt-2">
+                  <a href="#"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                    Buy Now
+                  </a>
+                </div>
               </div>
             </div>
-          </a>
-          <!-- End Card -->
+            <!-- End Card -->
+          </div>
+          <!-- End Grid -->
+
+          <!-- Card -->
+          <div
+            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+            <div
+              class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
+              <img class="size-full absolute top-0 start-0 object-cover"
+                src="{{ asset('images/product/snacks-biscuits.jpg') }}" alt="Blog Image">
+            </div>
+
+            <div class="absolute top-0 p-4 z-10">
+              <div
+                class="flex items-center justify-center text-white px-3 py-1 bg-linear-to-tl from-orange-500 drop-shadow-md to-orange-500/50 rounded-full">
+                <div class="text-center font-extrabold">
+                  2
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute top-0 right-0 p-4 z-10">
+              <div class="flex items-center justify-center text-white px-3 py-1">
+                <div class="inline-flex items-center font-extrabold">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
+                    <path fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
+                    <path fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 inset-x-0">
+              <div class="relative z-10 flex flex-col p-4 sm:p-6">
+                <h3
+                  class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80">
+                  Biscuits and Snacks
+                </h3>
+                <div class="mt-2">
+                  <a href="#"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                    Buy Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+
+          <!-- Card -->
+          <div
+            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+            <div
+              class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
+              <img class="size-full absolute top-0 start-0 object-cover" src="{{ asset('images/product/drinks.jpg') }}"
+                alt="Blog Image">
+            </div>
+
+            <div class="absolute top-0 p-4 z-10">
+              <div
+                class="flex items-center justify-center text-white px-3 py-1 bg-linear-to-tl from-orange-500 drop-shadow-md to-orange-500/50 rounded-full">
+                <div class="text-center font-extrabold">
+                  3
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute top-0 right-0 p-4 z-10">
+              <div class="flex items-center justify-center text-white px-3 py-1">
+                <div class="inline-flex items-center font-extrabold">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
+                    <path fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
+                    <path fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 inset-x-0">
+              <div class="relative z-10 flex flex-col p-4 sm:p-6">
+                <h3
+                  class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80">
+                  Drinks and Beverages
+                </h3>
+                <div class="mt-2">
+                  <a href="#"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                    Buy Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+
+
+            <!-- End Grid -->
+          </div>
+
+          <!-- Card -->
+          <div
+            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+            <div
+              class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
+              <img class="size-full absolute top-0 start-0 object-cover"
+                src="{{ asset('images/product/household-essentials.jpg') }}" alt="Blog Image">
+            </div>
+
+            <div class="absolute top-0 p-4 z-10">
+              <div
+                class="flex items-center justify-center text-white px-3 py-1 bg-linear-to-tl from-orange-500 drop-shadow-md to-orange-500/50 rounded-full">
+                <div class="text-center font-extrabold">
+                  4
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute top-0 right-0 p-4 z-10">
+              <div class="flex items-center justify-center text-white px-3 py-1">
+                <div class="inline-flex items-center font-extrabold">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
+                    <path fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
+                    <path fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 inset-x-0">
+              <div class="relative z-10 flex flex-col p-4 sm:p-6">
+                <h3
+                  class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80">
+                  Household Essentials
+                </h3>
+                <div class="mt-2">
+                  <a href="#"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                    Buy Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+
+          </div>
         </div>
-        <!-- End Grid -->
       </div>
-      <!-- End Card Blog -->
+      <div class="max-w-6xl px-4 sm:px-6 lg:px-8 lg:py-12 mx-auto">
+        <div class="flex flex-col items-center gap-y-2">
+          <h1 class="text-gray-900 text-2xl md:text-4xl lg:text-5xl text-center">
+            So what are you waiting for?
+          </h1>
+          <div class="inline-flex items-center gap-x-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="motion-translate-x-loop-25 size-8 md:size-16 lg:size-20 text-orange-600 drop-shadow-md drop-shadow-orange-600/50">
+              <path fill-rule="evenodd"
+                d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+            <a href="#"
+              class="font-semibold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent text-3xl md:text-5xl lg:text-6xl underline decoration-orange-500 underline-offset-12">
+              Start shopping now!
+            </a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="-motion-translate-x-loop-25 size-8 md:size-16 lg:size-20 text-orange-600 drop-shadow-md drop-shadow-orange-600/50">
+              <path fill-rule="evenodd"
+                d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z"
+                clip-rule="evenodd" />
+            </svg>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- End Clients -->
-
 </body>
 
 </html>
