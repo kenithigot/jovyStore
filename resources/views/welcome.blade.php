@@ -70,23 +70,23 @@
         <div
           class="flex flex-col text-center gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
           <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-yellow-400 focus:outline-hidden focus:text-gray-600"
+            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
               href="#" aria-current="page">Home</a>
           </div>
           <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-yellow-400 focus:outline-hidden focus:text-gray-600"
+            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
               href="#" href="#">About</a>
           </div>
           <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-yellow-400 focus:outline-hidden focus:text-gray-600"
+            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
               href="#" href="#">Product</a>
           </div>
           <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-yellow-400 focus:outline-hidden focus:text-gray-600"
-              href="#" href="#">Deal</a>
+            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
+              href="#" href="#">Deals</a>
           </div>
           <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-yellow-400 focus:outline-hidden focus:text-gray-600"
+            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
               href="#" href="#">Contact</a>
           </div>
         </div>
@@ -151,7 +151,8 @@
     <div class="pb-16">
       <!-- Title -->
       <div class="w-full lg:w-2/3 mx-auto text-center my-6">
-        <h2 class="text-gray-900 text-lg">Trusted by food producers, local distributors, and thousands of Filipino households.
+        <h2 class="text-gray-900 text-lg">Trusted by food producers, local distributors, and thousands of Filipino
+          households.
         </h2>
       </div>
       <!-- End Title -->
@@ -411,7 +412,7 @@
       <!-- End Card Section -->
     </div>
 
-    <div class="bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400">
+    <div class="bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400 pb-10">
       <!-- Hero -->
       <div class="relative overflow-hidden">
 
@@ -672,7 +673,8 @@
             So what are you waiting for?
           </h1>
           <div class="inline-flex items-center gap-x-5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="motion-translate-x-loop-25 size-8 md:size-16 lg:size-20 text-orange-600 drop-shadow-md drop-shadow-orange-600/50">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="motion-translate-x-loop-25 size-8 md:size-16 lg:size-20 text-orange-600 drop-shadow-md drop-shadow-orange-600/50">
               <path fill-rule="evenodd"
                 d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
                 clip-rule="evenodd" />
@@ -681,7 +683,8 @@
               class="font-semibold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent text-3xl md:text-5xl lg:text-6xl underline decoration-orange-500 underline-offset-12">
               Start shopping now!
             </a>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="-motion-translate-x-loop-25 size-8 md:size-16 lg:size-20 text-orange-600 drop-shadow-md drop-shadow-orange-600/50">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="-motion-translate-x-loop-25 size-8 md:size-16 lg:size-20 text-orange-600 drop-shadow-md drop-shadow-orange-600/50">
               <path fill-rule="evenodd"
                 d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z"
                 clip-rule="evenodd" />
@@ -690,6 +693,230 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div>
+      <!-- Hero -->
+      <div class="relative overflow-hidden">
+
+        <div class="relative z-10">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16">
+            <div class="max-w-4xl text-center mx-auto">
+              <p
+                class="inline-block text-lg font-medium bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">
+                Deals - Bundle up your favorites
+              </p>
+
+              <!-- Title -->
+              <div class="mt-5 max-w-3xl mx-auto">
+                <h1 class="block font-semibold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
+                  “Smart shopping made easy — grab our ready-to-go packs and save more!”
+                </h1>
+              </div>
+              <!-- End Title -->
+            </div>
+          </div>
+
+          <!-- Pricing -->
+          <div class="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 mx-auto">
+
+            <!-- Grid -->
+            <div class="shadow-2xl">
+              <div class="relative before:absolute">
+                <div class="grid gap-px sm:grid-cols-2 lg:grid-cols-4 lg:items-center">
+                  <!-- Card -->
+                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                      <h4 class="font-medium text-lg text-gray-800">Quick Grab Pack</h4>
+                    </div>
+
+                    <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                      <span class="mt-7 font-bold text-5xl text-gray-800">
+                        <span class="font-bold text-2xl -me-2">Php</span>
+                        30,000
+                      </span>
+                    </div>
+
+                    <div class="h-full bg-white flex flex-col justify-center lg:mt-px pt-7 px-8">
+                      <ul class="space-y-2.5 text-center text-sm">
+                        <li class="text-gray-800">
+                          3 pcs Canned Goods (Sardines, Corned Beef, Tuna)
+                        </li>
+
+                        <li class="text-gray-800">
+                          2 kg Rice
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 pack Seasoning Mix
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Laundry Soap Bar
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Tissue Roll
+                        </li>
+                      </ul>
+
+                    </div>
+
+                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+                        Save up to 15% compared to individual prices!
+                      </span>
+                      <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                        href="#">
+                        Sign up
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                      <h4 class="font-medium text-lg text-gray-800">Smart Saver Bundle</h4>
+                    </div>
+
+                    <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                      <span class="mt-7 font-bold text-5xl text-gray-800">
+                        <span class="font-bold text-2xl -me-2">Php</span>
+                        50,000
+                      </span>
+                    </div>
+
+                    <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
+                      <ul class="space-y-2.5 text-center text-sm">
+                        <li class="text-gray-800">
+                          3 Snack Packs (Chips, Biscuits, Crackers)
+                        </li>
+
+                        <li class="text-gray-800">
+                          2 Soft Drinks or Juice Packs
+                        </li>
+
+                        <li class="text-gray-800">
+                          2 Chocolate Bars
+                        </li>
+                        <li class="text-gray-800">
+                          1 Instant Noodles Pack
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+                        Perfect for sharing with family or friends!
+                      </span>
+                     <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                        href="#">
+                        Sign up
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                      <h4 class="font-medium text-lg text-gray-800">Happy Home Pack</h4>
+                    </div>
+
+                    <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                      <span class="mt-7 font-bold text-5xl text-gray-800">
+                        <span class="font-bold text-2xl -me-2">Php</span>
+                        90,000
+                      </span>
+                    </div>
+
+                    <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
+                      <ul class="space-y-2.5 text-center text-sm">
+                        <li class="text-gray-800">
+                          1 Coffee Jar or 10 Sachets
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Loaf Bread
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Pack of Creamer
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Small Jar of Peanut Butter or Jam
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+                        Everything you need for a quick, satisfying breakfast.
+                      </span>
+                      <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                        href="#">
+                        Sign up
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                      <h4 class="font-medium text-lg text-gray-800">Ultimate Value Pack</h4>
+                    </div>
+
+                    <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                      <span class="mt-7 font-bold text-5xl text-gray-800">
+                        <span class="font-bold text-2xl -me-2">Php</span>
+                        150,000
+                      </span>
+                    </div>
+
+                    <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
+                      <ul class="space-y-2.5 text-center text-sm">
+                        <li class="text-gray-800">
+                          Dishwashing Liquid (500ml)
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Sponge Pack
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Laundry Detergent (1kg)
+                        </li>
+
+                        <li class="text-gray-800">
+                          1 Bath Soap
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+
+                        Save time and money with our complete care pack.
+                      </span>
+                      <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                        href="#">
+                        Sign up
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+                </div>
+              </div>
+            </div>
+            <!-- End Grid -->
+          </div>
+          <!-- End Pricing -->
+        </div>
+      </div>
+      <!-- End Hero -->
     </div>
   </div>
   <!-- End Clients -->
