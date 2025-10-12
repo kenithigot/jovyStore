@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 <body class="bg-linear-to-r from-slate-100 to-slate-200">
 
   <!-- ========== HEADER ========== -->
-  <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-5 bg-slate-100">
+  <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-5 bg-slate-300">
     <nav
       class="relative max-w-7xl w-full flex flex-wrap lg:grid lg:grid-cols-12 basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
       <div class="lg:col-span-3 flex items-center">
@@ -42,7 +42,7 @@
 
         <div class="lg:hidden">
           <button type="button"
-            class="hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+            class="hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-xl border bg-white border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
             id="hs-pro-hcail-collapse" aria-expanded="false" aria-controls="hs-pro-hcail" aria-label="Toggle navigation"
             data-hs-collapse="#hs-pro-hcail">
             <svg class="hs-collapse-open:hidden shrink-0 size-4 text-orange-500" xmlns="http://www.w3.org/2000/svg"
@@ -71,23 +71,19 @@
           class="flex flex-col text-center gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
           <div>
             <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#" aria-current="page">Home</a>
+              href="#about">About</a>
           </div>
           <div>
             <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#" href="#">About</a>
+              href="#product">Product</a>
           </div>
           <div>
             <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#" href="#">Product</a>
+              href="#deals">Deals</a>
           </div>
           <div>
             <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#" href="#">Deals</a>
-          </div>
-          <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#" href="#">Contact</a>
+              href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -116,13 +112,7 @@
         <div class="lg:col-span-2 text-center lg:text-start">
           <!-- Title -->
           <h1 class="block text-gray-900 text-4xl/12 md:text-5xl lg:text-6xl/18 italic">
-            Your Neighborhood Mini Market – <span
-              class="font-bold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">Fresh</span>,
-            <span
-              class="font-bold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">Affordable</span>,
-            <span
-              class="font-bold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">Convenient</span>.
-          </h1>
+            Your Neighborhood Mini Market – Fresh, Affordable, Convenient.</h1>
 
           <!-- Subtitle -->
           <p class="mt-5 text-lg text-gray-800 max-w-3xl mx-auto lg:mx-0">
@@ -179,7 +169,7 @@
       <div class="relative overflow-hidden">
 
         <div class="relative z-10">
-          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+          <div id="about" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div class="max-w-2xl text-center mx-auto">
               <p
                 class="inline-block text-lg font-medium bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">
@@ -208,7 +198,8 @@
     <!-- Slider -->
     <div class="px-4 sm:px-6 lg:px-8 py-10">
       <div data-hs-carousel='{
-      "loadingClasses": "opacity-0"
+      "loadingClasses": "opacity-0",
+       "isAutoPlay": true
     }' class="relative">
         <div
           class="hs-carousel relative overflow-hidden w-full h-120 md:h-[calc(100vh-106px)]  bg-gray-100 rounded-2xl">
@@ -312,7 +303,7 @@
         <!-- Grid -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           <!-- Card -->
-          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
             href="#">
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
@@ -336,7 +327,7 @@
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
             href="#">
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
@@ -360,7 +351,7 @@
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
             href="#">
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
@@ -384,7 +375,7 @@
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="drop-shadow-lg drop-shadow-blue-400 group flex flex-col bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
             href="#">
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
@@ -417,7 +408,7 @@
       <div class="relative overflow-hidden">
 
         <div class="relative z-10">
-          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+          <div id="product" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div class="max-w-2xl text-center mx-auto">
               <p class="inline-block text-lg font-medium text-gray-900">
                 Product - Shop by Category
@@ -694,232 +685,528 @@
         </div>
       </div>
     </div>
+    <!-- Hero -->
+    <div class="relative overflow-hidden pb-16">
 
-    <div>
-      <!-- Hero -->
-      <div class="relative overflow-hidden">
+      <div class="relative z-10">
+        <div id="deals" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16">
+          <div class="max-w-4xl text-center mx-auto">
+            <p
+              class="inline-block text-lg font-medium bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">
+              Deals - Bundle up your favorites
+            </p>
 
-        <div class="relative z-10">
-          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16">
-            <div class="max-w-4xl text-center mx-auto">
-              <p
-                class="inline-block text-lg font-medium bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">
-                Deals - Bundle up your favorites
-              </p>
-
-              <!-- Title -->
-              <div class="mt-5 max-w-3xl mx-auto">
-                <h1 class="block font-semibold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
-                  “Smart shopping made easy — grab our ready-to-go packs and save more!”
-                </h1>
-              </div>
-              <!-- End Title -->
+            <!-- Title -->
+            <div class="mt-5 max-w-3xl mx-auto">
+              <h1 class="block font-semibold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
+                “Smart shopping made easy — grab our ready-to-go packs and save more!”
+              </h1>
             </div>
+            <!-- End Title -->
           </div>
-
-          <!-- Pricing -->
-          <div class="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 mx-auto">
-
-            <!-- Grid -->
-            <div class="shadow-2xl">
-              <div class="relative before:absolute">
-                <div class="grid gap-px sm:grid-cols-2 lg:grid-cols-4 lg:items-center">
-                  <!-- Card -->
-                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                      <h4 class="font-medium text-lg text-gray-800">Quick Grab Pack</h4>
-                    </div>
-
-                    <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                      <span class="mt-7 font-bold text-5xl text-gray-800">
-                        <span class="font-bold text-2xl -me-2">Php</span>
-                        30,000
-                      </span>
-                    </div>
-
-                    <div class="h-full bg-white flex flex-col justify-center lg:mt-px pt-7 px-8">
-                      <ul class="space-y-2.5 text-center text-sm">
-                        <li class="text-gray-800">
-                          3 pcs Canned Goods (Sardines, Corned Beef, Tuna)
-                        </li>
-
-                        <li class="text-gray-800">
-                          2 kg Rice
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 pack Seasoning Mix
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Laundry Soap Bar
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Tissue Roll
-                        </li>
-                      </ul>
-
-                    </div>
-
-                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
-                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
-                        Save up to 15% compared to individual prices!
-                      </span>
-                      <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                        href="#">
-                        Sign up
-                      </a>
-                    </div>
-                  </div>
-                  <!-- End Card -->
-
-                  <!-- Card -->
-                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                      <h4 class="font-medium text-lg text-gray-800">Smart Saver Bundle</h4>
-                    </div>
-
-                    <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                      <span class="mt-7 font-bold text-5xl text-gray-800">
-                        <span class="font-bold text-2xl -me-2">Php</span>
-                        50,000
-                      </span>
-                    </div>
-
-                    <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
-                      <ul class="space-y-2.5 text-center text-sm">
-                        <li class="text-gray-800">
-                          3 Snack Packs (Chips, Biscuits, Crackers)
-                        </li>
-
-                        <li class="text-gray-800">
-                          2 Soft Drinks or Juice Packs
-                        </li>
-
-                        <li class="text-gray-800">
-                          2 Chocolate Bars
-                        </li>
-                        <li class="text-gray-800">
-                          1 Instant Noodles Pack
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
-                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
-                        Perfect for sharing with family or friends!
-                      </span>
-                     <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                        href="#">
-                        Sign up
-                      </a>
-                    </div>
-                  </div>
-                  <!-- End Card -->
-
-                  <!-- Card -->
-                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                      <h4 class="font-medium text-lg text-gray-800">Happy Home Pack</h4>
-                    </div>
-
-                    <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                      <span class="mt-7 font-bold text-5xl text-gray-800">
-                        <span class="font-bold text-2xl -me-2">Php</span>
-                        90,000
-                      </span>
-                    </div>
-
-                    <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
-                      <ul class="space-y-2.5 text-center text-sm">
-                        <li class="text-gray-800">
-                          1 Coffee Jar or 10 Sachets
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Loaf Bread
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Pack of Creamer
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Small Jar of Peanut Butter or Jam
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
-                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
-                        Everything you need for a quick, satisfying breakfast.
-                      </span>
-                      <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                        href="#">
-                        Sign up
-                      </a>
-                    </div>
-                  </div>
-                  <!-- End Card -->
-
-                  <!-- Card -->
-                  <div class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                    <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                      <h4 class="font-medium text-lg text-gray-800">Ultimate Value Pack</h4>
-                    </div>
-
-                    <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                      <span class="mt-7 font-bold text-5xl text-gray-800">
-                        <span class="font-bold text-2xl -me-2">Php</span>
-                        150,000
-                      </span>
-                    </div>
-
-                    <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
-                      <ul class="space-y-2.5 text-center text-sm">
-                        <li class="text-gray-800">
-                          Dishwashing Liquid (500ml)
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Sponge Pack
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Laundry Detergent (1kg)
-                        </li>
-
-                        <li class="text-gray-800">
-                          1 Bath Soap
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="bg-white pt-2 pb-8 px-8 space-y-2">
-                      <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
-
-                        Save time and money with our complete care pack.
-                      </span>
-                      <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                        href="#">
-                        Sign up
-                      </a>
-                    </div>
-                  </div>
-                  <!-- End Card -->
-                </div>
-              </div>
-            </div>
-            <!-- End Grid -->
-          </div>
-          <!-- End Pricing -->
         </div>
+
+        <!-- Pricing -->
+        <div class="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 mx-auto">
+
+          <!-- Grid -->
+          <div class="shadow-2xl">
+            <div class="relative before:absolute">
+              <div class="grid gap-px sm:grid-cols-2 lg:grid-cols-4 lg:items-center">
+                <!-- Card -->
+                <div
+                  class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                    <h4 class="font-medium text-lg text-gray-800">Quick Grab Pack</h4>
+                  </div>
+
+                  <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                    <span class="mt-7 font-bold text-5xl text-gray-800">
+                      <span class="font-bold text-2xl -me-2">Php</span>
+                      30,000
+                    </span>
+                  </div>
+
+                  <div class="h-full bg-white flex flex-col justify-center lg:mt-px pt-7 px-8">
+                    <ul class="space-y-2.5 text-center text-sm">
+                      <li class="text-gray-800">
+                        3 pcs Canned Goods (Sardines, Corned Beef, Tuna)
+                      </li>
+
+                      <li class="text-gray-800">
+                        2 kg Rice
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 pack Seasoning Mix
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Laundry Soap Bar
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Tissue Roll
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                    <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+                      Save up to 15% compared to individual prices!
+                    </span>
+                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                      href="#">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div
+                  class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                    <h4 class="font-medium text-lg text-gray-800">Smart Saver Bundle</h4>
+                  </div>
+
+                  <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                    <span class="mt-7 font-bold text-5xl text-gray-800">
+                      <span class="font-bold text-2xl -me-2">Php</span>
+                      50,000
+                    </span>
+                  </div>
+
+                  <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
+                    <ul class="space-y-2.5 text-center text-sm">
+                      <li class="text-gray-800">
+                        3 Snack Packs (Chips, Biscuits, Crackers)
+                      </li>
+
+                      <li class="text-gray-800">
+                        2 Soft Drinks or Juice Packs
+                      </li>
+
+                      <li class="text-gray-800">
+                        2 Chocolate Bars
+                      </li>
+                      <li class="text-gray-800">
+                        1 Instant Noodles Pack
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                    <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+                      Perfect for sharing with family or friends!
+                    </span>
+                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                      href="#">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div
+                  class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                    <h4 class="font-medium text-lg text-gray-800">Happy Home Pack</h4>
+                  </div>
+
+                  <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                    <span class="mt-7 font-bold text-5xl text-gray-800">
+                      <span class="font-bold text-2xl -me-2">Php</span>
+                      90,000
+                    </span>
+                  </div>
+
+                  <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
+                    <ul class="space-y-2.5 text-center text-sm">
+                      <li class="text-gray-800">
+                        1 Coffee Jar or 10 Sachets
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Loaf Bread
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Pack of Creamer
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Small Jar of Peanut Butter or Jam
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                    <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+                      Everything you need for a quick, satisfying breakfast.
+                    </span>
+                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                      href="#">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div
+                  class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
+                    <h4 class="font-medium text-lg text-gray-800">Ultimate Value Pack</h4>
+                  </div>
+
+                  <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
+                    <span class="mt-7 font-bold text-5xl text-gray-800">
+                      <span class="font-bold text-2xl -me-2">Php</span>
+                      150,000
+                    </span>
+                  </div>
+
+                  <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
+                    <ul class="space-y-2.5 text-center text-sm">
+                      <li class="text-gray-800">
+                        Dishwashing Liquid (500ml)
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Sponge Pack
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Laundry Detergent (1kg)
+                      </li>
+
+                      <li class="text-gray-800">
+                        1 Bath Soap
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="bg-white pt-2 pb-8 px-8 space-y-2">
+                    <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
+
+                      Save time and money with our complete care pack.
+                    </span>
+                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
+                      href="#">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+                <!-- End Card -->
+              </div>
+            </div>
+          </div>
+          <!-- End Grid -->
+        </div>
+        <!-- End Pricing -->
       </div>
-      <!-- End Hero -->
     </div>
+    <!-- End Hero -->
+    <!-- Contact -->
+    <div id="contact">
+      <div class="max-w-5xl px-4 xl:px-0 py-12 lg:py-20 mx-auto">
+        <!-- Title -->
+        <div class="max-w-3xl mb-10 lg:mb-14">
+          <h1
+            class="block font-semibold bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent text-4xl md:text-5xl lg:text-6xl md:leading-tight">
+            Contact Us
+          </h1>
+          <p class="mt-1 text-lg text-gray-600">We’re here to help you with your orders, deals, or feedback.</p>
+        </div>
+        <!-- End Title -->
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16">
+          <div class="md:order-2 border-b border-orange-600 pb-10 mb-10 md:border-b-0 md:pb-0 md:mb-0">
+            <form>
+              <div class="space-y-4">
+                <!-- Input -->
+                <div class="relative">
+                  <input type="text" id="hs-tac-input-name" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
+              focus:pt-6
+              focus:pb-2
+              not-placeholder-shown:pt-6
+              not-placeholder-shown:pb-2
+              autofill:pt-6
+              autofill:pb-2" placeholder="Name">
+                  <label for="hs-tac-input-name" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                peer-focus:text-xs
+                peer-focus:-translate-y-1.5
+                peer-focus:text-gray-700
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:-translate-y-1.5
+                peer-not-placeholder-shown:text-gray-700">Name</label>
+                </div>
+                <!-- End Input -->
+
+                <!-- Input -->
+                <div class="relative">
+                  <input type="email" id="hs-tac-input-email" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
+              focus:pt-6
+              focus:pb-2
+              not-placeholder-shown:pt-6
+              not-placeholder-shown:pb-2
+              autofill:pt-6
+              autofill:pb-2" placeholder="Email">
+                  <label for="hs-tac-input-email" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                peer-focus:text-xs
+                peer-focus:-translate-y-1.5
+                peer-focus:text-gray-700
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:-translate-y-1.5
+                peer-not-placeholder-shown:text-gray-700">Email</label>
+                </div>
+                <!-- End Input -->
+
+                <!-- Input -->
+                <div class="relative">
+                  <input type="text" id="hs-tac-input-company" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
+              focus:pt-6
+              focus:pb-2
+              not-placeholder-shown:pt-6
+              not-placeholder-shown:pb-2
+              autofill:pt-6
+              autofill:pb-2" placeholder="Company">
+                  <label for="hs-tac-input-company" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                peer-focus:text-xs
+                peer-focus:-translate-y-1.5
+                peer-focus:text-gray-700
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:-translate-y-1.5
+                peer-not-placeholder-shown:text-gray-700">Company</label>
+                </div>
+                <!-- End Input -->
+
+                <!-- Input -->
+                <div class="relative">
+                  <input type="text" id="hs-tac-input-phone" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
+              focus:pt-6
+              focus:pb-2
+              not-placeholder-shown:pt-6
+              not-placeholder-shown:pb-2
+              autofill:pt-6
+              autofill:pb-2" placeholder="Phone">
+                  <label for="hs-tac-input-phone" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                peer-focus:text-xs
+                peer-focus:-translate-y-1.5
+                peer-focus:text-gray-700
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:-translate-y-1.5
+                peer-not-placeholder-shown:text-gray-700">Phone</label>
+                </div>
+                <!-- End Input -->
+
+                <!-- Textarea -->
+                <div class="relative">
+                  <textarea id="hs-tac-message" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
+              focus:pt-6
+              focus:pb-2
+              not-placeholder-shown:pt-6
+              not-placeholder-shown:pb-2
+              autofill:pt-6
+              autofill:pb-2" placeholder="This is a textarea placeholder" data-hs-textarea-auto-height></textarea>
+                  <label for="hs-tac-message" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                peer-focus:text-xs
+                peer-focus:-translate-y-1.5
+                peer-focus:text-gray-700
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:-translate-y-1.5
+                peer-not-placeholder-shown:text-gray-700">Tell us about your project</label>
+                </div>
+                <!-- End Textarea -->
+              </div>
+
+              <div class="mt-2">
+                <span class="inline-flex items-center gap-px text-xs text-neutral-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                  </svg>
+                  All fields are required
+                </span>
+
+                <p class="mt-5">
+                  <button
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+                    href="#">
+                    Submit
+                    <svg class="shrink-0 size-4 transition group-hover:translate-x-0.5 group-focus:translate-x-0.5"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </button>
+                </p>
+              </div>
+            </form>
+          </div>
+          <!-- End Col -->
+
+          <div class="space-y-6">
+            <!-- Item -->
+            <div
+              class="py-2 px-3 flex gap-x-5 drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition">
+              <svg class="shrink-0 size-6 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div class="grow">
+                <h4 class="text-gray-800 font-semibold">Our address:</h4>
+
+                <span class="mt-1 text-gray-700 text-sm not-italic">
+                  P-3, Labuay, Maigo<br>
+                  Lanao del Norte, Philippines
+                </span>
+              </div>
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div
+              class="py-2 px-3 flex gap-x-5 drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition">
+              <svg class="shrink-0 size-6 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
+                <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
+              </svg>
+              <div class="grow">
+                <h4 class="text-gray-800 font-semibold">Email us:</h4>
+
+                <span class="mt-1 text-gray-700 text-sm not-italic">
+                  kennithigot@gmail.com
+                </span>
+              </div>
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div
+              class="py-2 px-3 flex gap-x-5 drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="shrink-0 size-6 text-gray-900">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+
+              <div class="grow">
+                <h4 class="text-gray-800 font-semibold">Store hour:</h4>
+
+                <span class="mt-1 text-gray-700 text-sm not-italic">
+                  Mon–Sat, 8:00 AM – 8:00 PM
+                </span>
+              </div>
+            </div>
+            <!-- End Item -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+      </div>
+    </div>
+    <!-- End Contact -->
   </div>
   <!-- End Clients -->
+  <div class="bg-slate-300 px-4 md:px-6 lg:px-8">
+    <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+      <!-- Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
+        <div class="flex overflow-hidden items-center justify-center md:justify-start">
+          <a href="#">
+            <!-- Logo -->
+            <img src="{{ asset('images/logo.png') }}" alt="Store Logo" class="h-16 w-26">
+            <!-- End of Logo -->
+            <div class="ms-1 sm:ms-2"> </div>
+          </a>
+        </div>
+        <!-- End Col -->
+
+        <ul class="text-center">
+          <li
+            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
+            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
+              href="#about">
+              About
+            </a>
+          </li>
+          <li
+            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
+            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
+              href="#product">
+              Product
+            </a>
+          </li>
+          <li
+            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
+            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
+              href="#deals">
+              Deals
+            </a>
+          </li>
+          <li
+            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
+            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
+              href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <!-- End Col -->
+
+        <!-- Social Brands -->
+        <div class="flex justify-center md:justify-end md:text-end space-x-2">
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+            href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </a>
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+            href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+          </a>
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+            href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-youtube" viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+            </svg>
+          </a>
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+            href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-tiktok" viewBox="0 0 16 16">
+              <path
+                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+            </svg>
+          </a>
+        </div>
+        <!-- End Social Brands -->
+      </div>
+      <!-- End Grid -->
+    </footer>
+  </div>
+
 </body>
 
 </html>
