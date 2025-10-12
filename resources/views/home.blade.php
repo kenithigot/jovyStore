@@ -69,22 +69,10 @@
         aria-labelledby="hs-pro-hcail-collapse">
         <div
           class="flex flex-col text-center gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
-          <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#about">About</a>
-          </div>
-          <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#product">Product</a>
-          </div>
-          <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#deals">Deals</a>
-          </div>
-          <div>
-            <a class="inline-block text-black hover:text-orange-400 hover:border-b-2 hover:border-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#contact">Contact</a>
-          </div>
+          <x-nav-link href="#about">About</x-nav-link>
+          <x-nav-link href="#product">Product</x-nav-link>
+          <x-nav-link href="#deals">Deals</x-nav-link>
+          <x-nav-link href="#contact">Contact</x-nav-link>
         </div>
       </div>
       <!-- End Collapse -->
@@ -149,17 +137,12 @@
 
       <div class="">
         <div
-          class="px-10 py-3 lg:py-8 flex justify-center gap-x-6 sm:gap-x-12 lg:gap-x-24 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400">
-          <img src="{{ asset('images/beer.png') }}"
-            class="py-3 lg:p-2 w-12 h-auto md:w-20 lg:w-28 mx-auto sm:mx-0 motion-translate-y-loop-25 drop-shadow-2xl drop-shadow-slate-500/50">
-          <img src="{{ asset('images/burger.png') }}"
-            class="py-3 lg:p-2 w-12 h-auto md:w-20 lg:w-28 mx-auto sm:mx-0 -motion-translate-y-loop-25 drop-shadow-2xl drop-shadow-slate-500/50">
-          <img src="{{ asset('images/coffee.png') }}"
-            class="py-3 lg:p-2 w-12 h-auto md:w-20 lg:w-28 mx-auto sm:mx-0 motion-translate-y-loop-25 drop-shadow-2xl drop-shadow-slate-500/50">
-          <img src="{{ asset('images/cookie.png') }}"
-            class="py-3 lg:p-2 w-12 h-auto md:w-20 lg:w-28 mx-auto sm:mx-0 -motion-translate-y-loop-25 drop-shadow-2xl drop-shadow-slate-500/50">
-          <img src="{{ asset('images/lemonade.png') }}"
-            class="py-3 lg:p-2 w-12 h-auto md:w-20 lg:w-28 mx-auto sm:mx-0 motion-translate-y-loop-25 drop-shadow-2xl drop-shadow-slate-500/50">
+          class="px-10 py-3 lg:py-8 flex justify-center items-center gap-x-6 sm:gap-x-12 lg:gap-x-24 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400">
+          <x-partner-logo src="{{ asset('images/beer.png') }}" class="motion-translate-y-loop-25" />
+          <x-partner-logo src="{{ asset('images/burger.png') }}" class="-motion-translate-y-loop-25" />
+          <x-partner-logo src="{{ asset('images/coffee.png') }}" class="motion-translate-y-loop-25" />
+          <x-partner-logo src="{{ asset('images/cookie.png') }}" class="-motion-translate-y-loop-25" />
+          <x-partner-logo src="{{ asset('images/lemonade.png') }}" class="motion-translate-y-loop-25" />
         </div>
       </div>
     </div>
@@ -303,8 +286,7 @@
         <!-- Grid -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           <!-- Card -->
-          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
-            href="#">
+          <x-card.group-card href="#">
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -313,22 +295,16 @@
                     d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                 </svg>
 
-                <div class="grow">
-                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
-                    Affordable Essentials
-                  </h3>
-                  <p class="text-sm text-gray-700">
-                    Groceries at budget-friendly prices
-                  </p>
-                </div>
+                <x-card.text-card title="Affordable Essentials">
+                  Groceries at budget-friendly prices
+                </x-card.text-card>
               </div>
             </div>
-          </a>
+          </x-card.group-card>
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
-            href="#">
+          <x-card.group-card>
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -336,23 +312,16 @@
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                 </svg>
-
-                <div class="grow">
-                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
-                    Wide Selection
-                  </h3>
-                  <p class="text-sm text-gray-700">
-                    From canned goods to fresh items
-                  </p>
-                </div>
+                <x-card.text-card title="Wide Selection">
+                  From canned goods to fresh items
+                </x-card.text-card>
               </div>
             </div>
-          </a>
+          </x-card.group-card>
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
-            href="#">
+          <x-card.group-card>
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -360,23 +329,16 @@
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                 </svg>
-
-                <div class="grow">
-                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
-                    Convenient & Reliable
-                  </h3>
-                  <p class="text-sm text-gray-700">
-                    Easy access, hassle-free shopping
-                  </p>
-                </div>
+                <x-card.text-card title="Convenient & Reliable">
+                  Easy access, hassle-free shopping
+                </x-card.text-card>
               </div>
             </div>
-          </a>
+          </x-card.group-card>
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="group flex flex-col drop-shadow-lg drop-shadow-blue-400 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400 border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
-            href="#">
+          <x-card.group-card>
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -384,18 +346,12 @@
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                 </svg>
-
-                <div class="grow">
-                  <h3 class="group-hover:text-gray-800 font-semibold text-gray-900">
-                    Community Trusted
-                  </h3>
-                  <p class="text-sm text-gray-700">
-                    Serving local families daily
-                  </p>
-                </div>
+                <x-card.text-card title="Community Trusted">
+                  Serving local families daily.
+                </x-card.text-card>
               </div>
             </div>
-          </a>
+          </x-card.group-card>
           <!-- End Card -->
         </div>
         <!-- End Grid -->
@@ -453,19 +409,9 @@
             <div class="absolute top-0 right-0 p-4 z-10">
               <div class="flex items-center justify-center text-white px-3 py-1">
                 <div class="inline-flex items-center font-extrabold">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
                 </div>
               </div>
             </div>
@@ -486,7 +432,6 @@
             </div>
             <!-- End Card -->
           </div>
-          <!-- End Grid -->
 
           <!-- Card -->
           <div
@@ -509,19 +454,10 @@
             <div class="absolute top-0 right-0 p-4 z-10">
               <div class="flex items-center justify-center text-white px-3 py-1">
                 <div class="inline-flex items-center font-extrabold">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
                 </div>
               </div>
             </div>
@@ -564,19 +500,9 @@
             <div class="absolute top-0 right-0 p-4 z-10">
               <div class="flex items-center justify-center text-white px-3 py-1">
                 <div class="inline-flex items-center font-extrabold">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
                 </div>
               </div>
             </div>
@@ -596,9 +522,6 @@
               </div>
             </div>
             <!-- End Card -->
-
-
-            <!-- End Grid -->
           </div>
 
           <!-- Card -->
@@ -622,19 +545,9 @@
             <div class="absolute top-0 right-0 p-4 z-10">
               <div class="flex items-center justify-center text-white px-3 py-1">
                 <div class="inline-flex items-center font-extrabold">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-6 text-orange-600 drop-shadow-sm drop-shadow-orange-500/50">
-                    <path fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
+                  <x-icons.star-icon />
                 </div>
               </div>
             </div>
@@ -657,6 +570,7 @@
 
           </div>
         </div>
+        <!-- End Grid -->
       </div>
       <div class="max-w-6xl px-4 sm:px-6 lg:px-8 lg:py-12 mx-auto">
         <div class="flex flex-col items-center gap-y-2">
