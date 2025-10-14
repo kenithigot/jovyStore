@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jovy Store</title>
+  <title>Jovy's Store</title>
 
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -69,10 +69,10 @@
         aria-labelledby="hs-pro-hcail-collapse">
         <div
           class="flex flex-col text-center gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
-          <x-nav-link href="#about">About</x-nav-link>
-          <x-nav-link href="#product">Product</x-nav-link>
-          <x-nav-link href="#deals">Deals</x-nav-link>
-          <x-nav-link href="#contact">Contact</x-nav-link>
+          <x-link.nav-link href="#about">About</x-link.nav-link>
+          <x-link.nav-link href="#product">Product</x-link.nav-link>
+          <x-link.nav-link href="#deals">Deals</x-link.nav-link>
+          <x-link.nav-link href="#contact">Contact</x-link.nav-link>
         </div>
       </div>
       <!-- End Collapse -->
@@ -154,16 +154,11 @@
         <div class="relative z-10">
           <div id="about" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div class="max-w-2xl text-center mx-auto">
-              <p
-                class="inline-block text-lg font-medium bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">
-                About us - Why Shop Here
-              </p>
-
+              <x-text-gradient>About us - Why Shop Here</x-text-gradient>
+              
               <!-- Title -->
               <div class="mt-5 max-w-2xl">
-                <h1 class="block font-semibold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
-                  “Everyday Needs, One Stop Away”
-                </h1>
+                <x-heading.main-heading>“Everyday Needs, One Stop Away”</x-heading.main-heading>
               </div>
               <!-- End Title -->
 
@@ -219,10 +214,7 @@
                   Restock daily to keep your favorites fresh and ready anytime!
                 </span>
                 <div class="mt-5">
-                  <a href="#"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
-                    Shop Now
-                  </a>
+                  <x-button.home-button>Shop Now</x-button.home-button>
                 </div>
               </div>
             </div>
@@ -239,10 +231,7 @@
                   Products come from trusted local suppliers — fresher and more affordable!
                 </span>
                 <div class="mt-5">
-                  <a href="#"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
-                    Shop Now
-                  </a>
+                  <x-button.home-button>Shop Now</x-button.home-button>
                 </div>
               </div>
             </div>
@@ -289,12 +278,7 @@
           <x-card.group-card href="#">
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-7 text-gray-800">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                </svg>
-
+                <x-icons.checkbadge-icon />
                 <x-card.text-card title="Affordable Essentials">
                   Groceries at budget-friendly prices
                 </x-card.text-card>
@@ -307,11 +291,7 @@
           <x-card.group-card>
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-7 text-gray-800">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                </svg>
+                <x-icons.checkbadge-icon />
                 <x-card.text-card title="Wide Selection">
                   From canned goods to fresh items
                 </x-card.text-card>
@@ -324,11 +304,7 @@
           <x-card.group-card>
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-7 text-gray-800">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                </svg>
+                <x-icons.checkbadge-icon />
                 <x-card.text-card title="Convenient & Reliable">
                   Easy access, hassle-free shopping
                 </x-card.text-card>
@@ -341,11 +317,7 @@
           <x-card.group-card>
             <div class="p-4 md:p-5">
               <div class="flex gap-x-5">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-7 text-gray-800">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                </svg>
+                <x-icons.checkbadge-icon />
                 <x-card.text-card title="Community Trusted">
                   Serving local families daily.
                 </x-card.text-card>
@@ -372,9 +344,9 @@
 
               <!-- Title -->
               <div class="mt-5 max-w-2xl">
-                <h1 class="block font-semibold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
+                <x-heading.main-heading>
                   Discover everything you need, all in one place!
-                </h1>
+                </x-heading.main-heading>
               </div>
               <!-- End Title -->
             </div>
@@ -389,21 +361,11 @@
         <div class="grid lg:grid-cols-2 gap-6 lg:gap-12">
 
           <!-- Card -->
-          <div
-            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-            <div
-              class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
-              <img class="size-full absolute top-0 start-0 object-cover"
-                src="{{ asset('images/product/canned-goods.jpg') }}" alt="Blog Image">
-            </div>
-
+          <x-card.transition-card>
+            <!-- Image -->
+            <x-card.image-card src="{{ asset('images/product/canned-goods.jpg') }}" alt="Canned Goods" />
             <div class="absolute top-0 p-4 z-10">
-              <div
-                class="flex items-center justify-center text-white px-3 py-1 bg-linear-to-tl from-orange-500 drop-shadow-md to-orange-500/50 rounded-full">
-                <div class="text-center font-extrabold">
-                  1
-                </div>
-              </div>
+              <x-number-badge number="1" />
             </div>
 
             <div class="absolute top-0 right-0 p-4 z-10">
@@ -423,32 +385,21 @@
                   Canned Goods
                 </h3>
                 <div class="mt-2">
-                  <a href="#"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                  <x-button.home-button>
                     Buy Now
-                  </a>
+                  </x-button.home-button>
                 </div>
               </div>
             </div>
-            <!-- End Card -->
-          </div>
+          </x-card.transition-card>
+          <!-- End Card -->
 
           <!-- Card -->
-          <div
-            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-            <div
-              class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
-              <img class="size-full absolute top-0 start-0 object-cover"
-                src="{{ asset('images/product/snacks-biscuits.jpg') }}" alt="Blog Image">
-            </div>
-
+          <x-card.transition-card>
+            <!-- Image -->
+            <x-card.image-card src="{{ asset('images/product/snacks-biscuits.jpg') }}" alt="Biscuits and Snacks" />
             <div class="absolute top-0 p-4 z-10">
-              <div
-                class="flex items-center justify-center text-white px-3 py-1 bg-linear-to-tl from-orange-500 drop-shadow-md to-orange-500/50 rounded-full">
-                <div class="text-center font-extrabold">
-                  2
-                </div>
-              </div>
+              <x-number-badge number="1" />
             </div>
 
             <div class="absolute top-0 right-0 p-4 z-10">
@@ -469,32 +420,21 @@
                   Biscuits and Snacks
                 </h3>
                 <div class="mt-2">
-                  <a href="#"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                  <x-button.home-button>
                     Buy Now
-                  </a>
+                  </x-button.home-button>
                 </div>
               </div>
             </div>
-            <!-- End Card -->
-          </div>
+          </x-card.transition-card>
+          <!-- End Card -->
 
           <!-- Card -->
-          <div
-            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-            <div
-              class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
-              <img class="size-full absolute top-0 start-0 object-cover" src="{{ asset('images/product/drinks.jpg') }}"
-                alt="Blog Image">
-            </div>
-
+          <x-card.transition-card>
+            <!-- Images -->
+            <x-card.image-card src="{{ asset('images/product/drinks.jpg') }}" alt="Drinks and Beverages" />
             <div class="absolute top-0 p-4 z-10">
-              <div
-                class="flex items-center justify-center text-white px-3 py-1 bg-linear-to-tl from-orange-500 drop-shadow-md to-orange-500/50 rounded-full">
-                <div class="text-center font-extrabold">
-                  3
-                </div>
-              </div>
+              <x-number-badge number="1" />
             </div>
 
             <div class="absolute top-0 right-0 p-4 z-10">
@@ -514,32 +454,23 @@
                   Drinks and Beverages
                 </h3>
                 <div class="mt-2">
-                  <a href="#"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                  <x-button.home-button>
                     Buy Now
-                  </a>
+                  </x-button.home-button>
                 </div>
               </div>
             </div>
-            <!-- End Card -->
-          </div>
+          </x-card.transition-card>
+          <!-- End Card -->
+
 
           <!-- Card -->
-          <div
-            class="group relative block rounded-xl focus:outline-hidden drop-shadow-xl drop-shadow-gray-600 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-            <div
-              class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70">
-              <img class="size-full absolute top-0 start-0 object-cover"
-                src="{{ asset('images/product/household-essentials.jpg') }}" alt="Blog Image">
-            </div>
-
+          <x-card.transition-card>
+            <!-- Images -->
+            <x-card.image-card src="{{ asset('images/product/household-essentials.jpg') }}"
+              alt="Household Essentials" />
             <div class="absolute top-0 p-4 z-10">
-              <div
-                class="flex items-center justify-center text-white px-3 py-1 bg-linear-to-tl from-orange-500 drop-shadow-md to-orange-500/50 rounded-full">
-                <div class="text-center font-extrabold">
-                  4
-                </div>
-              </div>
+              <x-number-badge number="1" />
             </div>
 
             <div class="absolute top-0 right-0 p-4 z-10">
@@ -559,19 +490,19 @@
                   Household Essentials
                 </h3>
                 <div class="mt-2">
-                  <a href="#"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                  <x-button.home-button>
                     Buy Now
-                  </a>
+                  </x-button.home-button>
                 </div>
               </div>
             </div>
-            <!-- End Card -->
+          </x-card.transition-card>
+          <!-- End Card -->
 
-          </div>
         </div>
         <!-- End Grid -->
       </div>
+
       <div class="max-w-6xl px-4 sm:px-6 lg:px-8 lg:py-12 mx-auto">
         <div class="flex flex-col items-center gap-y-2">
           <h1 class="text-gray-900 text-2xl md:text-4xl lg:text-5xl text-center">
@@ -594,7 +525,6 @@
                 d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z"
                 clip-rule="evenodd" />
             </svg>
-
           </div>
         </div>
       </div>
@@ -605,16 +535,12 @@
       <div class="relative z-10">
         <div id="deals" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16">
           <div class="max-w-4xl text-center mx-auto">
-            <p
-              class="inline-block text-lg font-medium bg-clip-text bg-linear-to-l from-orange-600 to-orange-500 text-transparent">
-              Deals - Bundle up your favorites
-            </p>
+            <x-text-gradient>Deals - Bundle up your favorites</x-text-gradient>
 
             <!-- Title -->
             <div class="mt-5 max-w-3xl mx-auto">
-              <h1 class="block font-semibold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
-                “Smart shopping made easy — grab our ready-to-go packs and save more!”
-              </h1>
+              <x-heading.main-heading>“Smart shopping made easy — grab our ready-to-go packs and save
+                more!”</x-heading.main-heading>
             </div>
             <!-- End Title -->
           </div>
@@ -630,15 +556,10 @@
                 <!-- Card -->
                 <div
                   class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                    <h4 class="font-medium text-lg text-gray-800">Quick Grab Pack</h4>
-                  </div>
+                  <x-card.title-card>Quick Grab Pack</x-card.title-card>
 
                   <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                    <span class="mt-7 font-bold text-5xl text-gray-800">
-                      <span class="font-bold text-2xl -me-2">Php</span>
-                      30,000
-                    </span>
+                    <x-card.pricetext-card>30,000</x-card.pricetext-card>
                   </div>
 
                   <div class="h-full bg-white flex flex-col justify-center lg:mt-px pt-7 px-8">
@@ -670,10 +591,9 @@
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
                       Save up to 15% compared to individual prices!
                     </span>
-                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                      href="#">
+                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </a>
+                    </x-button.home-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -681,15 +601,9 @@
                 <!-- Card -->
                 <div
                   class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                    <h4 class="font-medium text-lg text-gray-800">Smart Saver Bundle</h4>
-                  </div>
-
+                  <x-card.title-card>Smart Saver Bundle</x-card.title-card>
                   <div class=" bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                    <span class="mt-7 font-bold text-5xl text-gray-800">
-                      <span class="font-bold text-2xl -me-2">Php</span>
-                      50,000
-                    </span>
+                    <x-card.pricetext-card>50,000</x-card.pricetext-card>
                   </div>
 
                   <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
@@ -715,10 +629,9 @@
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
                       Perfect for sharing with family or friends!
                     </span>
-                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                      href="#">
+                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </a>
+                    </x-button.home-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -726,15 +639,9 @@
                 <!-- Card -->
                 <div
                   class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                    <h4 class="font-medium text-lg text-gray-800">Happy Home Pack</h4>
-                  </div>
-
+                  <x-card.title-card>Happy Home Pack</x-card.title-card>
                   <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                    <span class="mt-7 font-bold text-5xl text-gray-800">
-                      <span class="font-bold text-2xl -me-2">Php</span>
-                      90,000
-                    </span>
+                    <x-card.pricetext-card>90,000</x-card.pricetext-card>
                   </div>
 
                   <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
@@ -761,10 +668,9 @@
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
                       Everything you need for a quick, satisfying breakfast.
                     </span>
-                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                      href="#">
+                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </a>
+                    </x-button.home-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -772,15 +678,9 @@
                 <!-- Card -->
                 <div
                   class="flex flex-col h-full text-center border border-orange-500 transform transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                  <div class="bg-white pt-8 pb-5 px-8 border-b border-orange-300">
-                    <h4 class="font-medium text-lg text-gray-800">Ultimate Value Pack</h4>
-                  </div>
-
+                  <x-card.title-card>Ultimate Value Pack</x-card.title-card>
                   <div class="bg-white lg:mt-px pt-2 lg:pt-0 lg:py-5 px-8">
-                    <span class="mt-7 font-bold text-5xl text-gray-800">
-                      <span class="font-bold text-2xl -me-2">Php</span>
-                      150,000
-                    </span>
+                    <x-card.pricetext-card>150,000</x-card.pricetext-card>
                   </div>
 
                   <div class="h-full bg-white flex justify-center lg:mt-px pt-7 px-8">
@@ -805,13 +705,11 @@
 
                   <div class="bg-white pt-2 pb-8 px-8 space-y-2">
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
-
                       Save time and money with our complete care pack.
                     </span>
-                    <a class="py-3 px-4 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:bg-gray-100 border border-orange-600 text-white focus:outline-hiddendisabled:opacity-50 disabled:pointer-events-none"
-                      href="#">
+                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </a>
+                    </x-button.home-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -844,96 +742,30 @@
               <div class="space-y-4">
                 <!-- Input -->
                 <div class="relative">
-                  <input type="text" id="hs-tac-input-name" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
-              focus:pt-6
-              focus:pb-2
-              not-placeholder-shown:pt-6
-              not-placeholder-shown:pb-2
-              autofill:pt-6
-              autofill:pb-2" placeholder="Name">
-                  <label for="hs-tac-input-name" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
-                peer-focus:text-xs
-                peer-focus:-translate-y-1.5
-                peer-focus:text-gray-700
-                peer-not-placeholder-shown:text-xs
-                peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-gray-700">Name</label>
+                  <x-input.input type="text" id="name" name="name" placeholder="Name" />
+                  <x-input.input-label for="name">Name</x-input.input-label>
                 </div>
                 <!-- End Input -->
 
                 <!-- Input -->
                 <div class="relative">
-                  <input type="email" id="hs-tac-input-email" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
-              focus:pt-6
-              focus:pb-2
-              not-placeholder-shown:pt-6
-              not-placeholder-shown:pb-2
-              autofill:pt-6
-              autofill:pb-2" placeholder="Email">
-                  <label for="hs-tac-input-email" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
-                peer-focus:text-xs
-                peer-focus:-translate-y-1.5
-                peer-focus:text-gray-700
-                peer-not-placeholder-shown:text-xs
-                peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-gray-700">Email</label>
+                  <x-input.input type="email" id="email" name="email" placeholder="Email" />
+                  <x-input.input-label for="email">Email</x-input.input-label>
                 </div>
                 <!-- End Input -->
 
                 <!-- Input -->
                 <div class="relative">
-                  <input type="text" id="hs-tac-input-company" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
-              focus:pt-6
-              focus:pb-2
-              not-placeholder-shown:pt-6
-              not-placeholder-shown:pb-2
-              autofill:pt-6
-              autofill:pb-2" placeholder="Company">
-                  <label for="hs-tac-input-company" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
-                peer-focus:text-xs
-                peer-focus:-translate-y-1.5
-                peer-focus:text-gray-700
-                peer-not-placeholder-shown:text-xs
-                peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-gray-700">Company</label>
-                </div>
-                <!-- End Input -->
-
-                <!-- Input -->
-                <div class="relative">
-                  <input type="text" id="hs-tac-input-phone" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
-              focus:pt-6
-              focus:pb-2
-              not-placeholder-shown:pt-6
-              not-placeholder-shown:pb-2
-              autofill:pt-6
-              autofill:pb-2" placeholder="Phone">
-                  <label for="hs-tac-input-phone" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
-                peer-focus:text-xs
-                peer-focus:-translate-y-1.5
-                peer-focus:text-gray-700
-                peer-not-placeholder-shown:text-xs
-                peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-gray-700">Phone</label>
+                  <x-input.input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />
+                  <x-input.input-label for="phoneNumber">Phone Number</x-input.input-label>
                 </div>
                 <!-- End Input -->
 
                 <!-- Textarea -->
                 <div class="relative">
-                  <textarea id="hs-tac-message" class="peer p-3 sm:p-4 block w-full bg-white border border-blue-500 rounded-lg sm:text-sm text-white placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-blue-600 disabled:opacity-50 disabled:pointer-events-none
-              focus:pt-6
-              focus:pb-2
-              not-placeholder-shown:pt-6
-              not-placeholder-shown:pb-2
-              autofill:pt-6
-              autofill:pb-2" placeholder="This is a textarea placeholder" data-hs-textarea-auto-height></textarea>
-                  <label for="hs-tac-message" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-700 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
-                peer-focus:text-xs
-                peer-focus:-translate-y-1.5
-                peer-focus:text-gray-700
-                peer-not-placeholder-shown:text-xs
-                peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-gray-700">Tell us about your project</label>
+                  <x-textarea.textarea id="inqury_message" name="inquiry_message"
+                    placeholder="Type your message here.." />
+                  <x-input.input-label for="inqury_message">Tell us about your inquiry</x-input.input-label>
                 </div>
                 <!-- End Textarea -->
               </div>
@@ -949,17 +781,14 @@
                 </span>
 
                 <p class="mt-5">
-                  <button
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-white bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
-                    href="#">
-                    Submit
+                  <x-button.home-button>Submit
                     <svg class="shrink-0 size-4 transition group-hover:translate-x-0.5 group-focus:translate-x-0.5"
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </button>
+                  </x-button.home-button>
                 </p>
               </div>
             </form>
@@ -1049,71 +878,43 @@
         <!-- End Col -->
 
         <ul class="text-center">
-          <li
-            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
-            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#about">
-              About
-            </a>
-          </li>
-          <li
-            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
-            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#product">
-              Product
-            </a>
-          </li>
-          <li
-            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
-            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#deals">
-              Deals
-            </a>
-          </li>
-          <li
-            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-900">
-            <a class="inline-flex gap-x-2 text-black hover:text-orange-400 focus:outline-hidden focus:text-gray-600"
-              href="#contact">
-              Contact
-            </a>
-          </li>
+          <x-link.footer-link href="#about">About</x-link.footer-link>
+          <x-link.footer-link href="#products">Products</x-link.footer-link>
+          <x-link.footer-link href="#deals">Deals</x-link.footer-link>
+          <x-link.footer-link href="#contact">Contact</x-link.footer-link>
         </ul>
         <!-- End Col -->
 
         <!-- Social Brands -->
         <div class="flex justify-center md:justify-end md:text-end space-x-2">
-          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-            href="#">
+          <x-link.social-link>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-instagram" viewBox="0 0 16 16">
               <path
                 d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
             </svg>
-          </a>
-          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-            href="#">
+          </x-link.social-link>
+          <x-link.social-link>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-facebook" viewBox="0 0 16 16">
               <path
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
             </svg>
-          </a>
-          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-            href="#">
+          </x-link.social-link>
+          <x-link.social-link>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-youtube" viewBox="0 0 16 16">
               <path
                 d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
             </svg>
-          </a>
-          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-orange-600 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-            href="#">
+          </x-link.social-link>
+          <x-link.social-link>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-tiktok" viewBox="0 0 16 16">
               <path
                 d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
             </svg>
-          </a>
+          </x-link.social-link>
         </div>
         <!-- End Social Brands -->
       </div>
