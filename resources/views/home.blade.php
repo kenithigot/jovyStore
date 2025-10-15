@@ -1,91 +1,13 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jovy's Store</title>
-
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body class="bg-linear-to-r from-slate-100 to-slate-200">
-
+<x-layouts.app>
   <!-- ========== HEADER ========== -->
-  <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-5 bg-slate-300">
-    <nav
-      class="relative max-w-7xl w-full flex flex-wrap lg:grid lg:grid-cols-12 basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
-      <div class="lg:col-span-3 flex items-center">
-        <!-- Logo -->
-        <img src="{{ asset('images/logo.png') }}" alt="Store Logo" class="h-16 w-26">
-        <!-- End of Logo -->
-        <div class="ms-1 sm:ms-2"> </div>
-      </div>
-
-      <!-- Button Group -->
-      <div class="flex items-center gap-x-1 lg:gap-x-2 ms-auto py-1 lg:ps-6 lg:order-3 lg:col-span-3">
-        <button type="button"
-          class="size-9.5 relative flex justify-center items-center rounded-xl bg-white border border-orange-500 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none cursor-pointer">
-          <span class="sr-only">Cart</span>
-          <svg class="shrink-0 size-4 text-orange-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <circle cx="8" cy="21" r="1" />
-            <circle cx="19" cy="21" r="1" />
-            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-          </svg>
-        </button>
-        <button type="button"
-          class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl border border-transparent bg-orange-500 text-white hover:bg-orange-600 focus:outline-hidden focus:bg-yellow-500 transition disabled:opacity-50 disabled:pointer-events-none cursor-pointer">
-          Sign in
-        </button>
-
-        <div class="lg:hidden">
-          <button type="button"
-            class="hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-xl border bg-white border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-            id="hs-pro-hcail-collapse" aria-expanded="false" aria-controls="hs-pro-hcail" aria-label="Toggle navigation"
-            data-hs-collapse="#hs-pro-hcail">
-            <svg class="hs-collapse-open:hidden shrink-0 size-4 text-orange-500" xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" x2="21" y1="6" y2="6" />
-              <line x1="3" x2="21" y1="12" y2="12" />
-              <line x1="3" x2="21" y1="18" y2="18" />
-            </svg>
-            <svg class="hs-collapse-open:block hidden shrink-0 size-4 text-orange-500"
-              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- End Button Group -->
-
-      <!-- Collapse -->
-      <div id="hs-pro-hcail"
-        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-6"
-        aria-labelledby="hs-pro-hcail-collapse">
-        <div
-          class="flex flex-col text-center gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
-          <x-link.nav-link href="#about">About</x-link.nav-link>
-          <x-link.nav-link href="#product">Product</x-link.nav-link>
-          <x-link.nav-link href="#deals">Deals</x-link.nav-link>
-          <x-link.nav-link href="#contact">Contact</x-link.nav-link>
-        </div>
-      </div>
-      <!-- End Collapse -->
-    </nav>
-  </header>
+  <x-navbar />
   <!-- ========== END HEADER ========== -->
 
   <!-- Hero -->
   <div class="relative overflow-hidden bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
 
-      <div class="grid lg:grid-cols-3 items-center gap-4">
-
+      <div class="grid lg:grid-cols-3 items-center gap-4 py-16">
         <!-- Image -->
         <div
           class="lg:col-span-1 absolute lg:relative top-0 left-1/2 transform -translate-x-1/2 lg:left-0 lg:translate-x-0 -z-15 lg:z-0">
@@ -94,7 +16,6 @@
               class="max-w-sm drop-shadow-2xl drop-shadow-orange-500/50">
           </div>
         </div>
-
 
         <!-- Content -->
         <div class="lg:col-span-2 text-center lg:text-start">
@@ -109,15 +30,14 @@
 
           <!-- Buttons -->
           <div class="mt-8 flex justify-center lg:justify-start">
-            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-linear-to-tl from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:from-violet-600 focus:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full py-3 px-4"
-              href="#">
+            <x-button.link-button href="#product" class="py-4 px-6">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
               </svg>
               View Product
-            </a>
+            </x-button.link-button>
           </div>
         </div>
       </div>
@@ -126,36 +46,32 @@
   <!-- End Hero -->
   <!-- Clients -->
   <div class="max-w-[85rem] pt-10 lg:pt-14 mx-auto bg-slate-100">
-    <div class="pb-16">
-      <!-- Title -->
-      <div class="w-full lg:w-2/3 mx-auto text-center my-6">
-        <h2 class="text-gray-900 text-lg">Trusted by food producers, local distributors, and thousands of Filipino
-          households.
-        </h2>
-      </div>
-      <!-- End Title -->
+    <!-- Title -->
+    <div class="w-full lg:w-2/3 mx-auto text-center my-6">
+      <h2 class="text-gray-900 text-lg">Trusted by food producers, local distributors, and thousands of Filipino
+        households.
+      </h2>
+    </div>
+    <!-- End Title -->
 
-      <div class="">
-        <div
-          class="px-10 py-3 lg:py-8 flex justify-center items-center gap-x-6 sm:gap-x-12 lg:gap-x-24 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400">
-          <x-partner-logo src="{{ asset('images/beer.png') }}" class="motion-translate-y-loop-25" />
-          <x-partner-logo src="{{ asset('images/burger.png') }}" class="-motion-translate-y-loop-25" />
-          <x-partner-logo src="{{ asset('images/coffee.png') }}" class="motion-translate-y-loop-25" />
-          <x-partner-logo src="{{ asset('images/cookie.png') }}" class="-motion-translate-y-loop-25" />
-          <x-partner-logo src="{{ asset('images/lemonade.png') }}" class="motion-translate-y-loop-25" />
-        </div>
-      </div>
+    <div
+      class="px-10 py-3 lg:py-8 flex justify-center items-center gap-x-6 sm:gap-x-12 lg:gap-x-24 bg-gradient-to-l from-orange-500 via-orange-300 to-orange-400">
+      <x-partner-logo src="{{ asset('images/beer.png') }}" class="motion-translate-y-loop-25" />
+      <x-partner-logo src="{{ asset('images/burger.png') }}" class="-motion-translate-y-loop-25" />
+      <x-partner-logo src="{{ asset('images/coffee.png') }}" class="motion-translate-y-loop-25" />
+      <x-partner-logo src="{{ asset('images/cookie.png') }}" class="-motion-translate-y-loop-25" />
+      <x-partner-logo src="{{ asset('images/lemonade.png') }}" class="motion-translate-y-loop-25" />
     </div>
 
-    <div>
+    <div id="about" class="pt-16">
       <!-- Hero -->
       <div class="relative overflow-hidden">
 
         <div class="relative z-10">
-          <div id="about" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div class="max-w-2xl text-center mx-auto">
-              <x-text-gradient>About us - Why Shop Here</x-text-gradient>
-              
+              <x-text-gradient class="text-xl font-medium">About us - Why Shop Here</x-text-gradient>
+
               <!-- Title -->
               <div class="mt-5 max-w-2xl">
                 <x-heading.main-heading>“Everyday Needs, One Stop Away”</x-heading.main-heading>
@@ -214,7 +130,7 @@
                   Restock daily to keep your favorites fresh and ready anytime!
                 </span>
                 <div class="mt-5">
-                  <x-button.home-button>Shop Now</x-button.home-button>
+                  <x-button.link-button>Shop Now</x-button.link-button>
                 </div>
               </div>
             </div>
@@ -231,7 +147,7 @@
                   Products come from trusted local suppliers — fresher and more affordable!
                 </span>
                 <div class="mt-5">
-                  <x-button.home-button>Shop Now</x-button.home-button>
+                  <x-button.link-button>Shop Now</x-button.link-button>
                 </div>
               </div>
             </div>
@@ -331,14 +247,14 @@
       <!-- End Card Section -->
     </div>
 
-    <div class="bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400 pb-10">
+    <div id="product" class="bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400 pb-10 pt-16">
       <!-- Hero -->
       <div class="relative overflow-hidden">
 
         <div class="relative z-10">
-          <div id="product" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div class="max-w-2xl text-center mx-auto">
-              <p class="inline-block text-lg font-medium text-gray-900">
+              <p class="inline-block text-xl font-medium text-gray-900">
                 Product - Shop by Category
               </p>
 
@@ -385,9 +301,9 @@
                   Canned Goods
                 </h3>
                 <div class="mt-2">
-                  <x-button.home-button>
+                  <x-button.link-button>
                     Buy Now
-                  </x-button.home-button>
+                  </x-button.link-button>
                 </div>
               </div>
             </div>
@@ -420,9 +336,9 @@
                   Biscuits and Snacks
                 </h3>
                 <div class="mt-2">
-                  <x-button.home-button>
+                  <x-button.link-button>
                     Buy Now
-                  </x-button.home-button>
+                  </x-button.link-button>
                 </div>
               </div>
             </div>
@@ -454,9 +370,9 @@
                   Drinks and Beverages
                 </h3>
                 <div class="mt-2">
-                  <x-button.home-button>
+                  <x-button.link-button>
                     Buy Now
-                  </x-button.home-button>
+                  </x-button.link-button>
                 </div>
               </div>
             </div>
@@ -490,9 +406,9 @@
                   Household Essentials
                 </h3>
                 <div class="mt-2">
-                  <x-button.home-button>
+                  <x-button.link-button>
                     Buy Now
-                  </x-button.home-button>
+                  </x-button.link-button>
                 </div>
               </div>
             </div>
@@ -530,12 +446,12 @@
       </div>
     </div>
     <!-- Hero -->
-    <div class="relative overflow-hidden pb-16">
+    <div id="deals" class="relative overflow-hidden py-16">
 
       <div class="relative z-10">
-        <div id="deals" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16">
           <div class="max-w-4xl text-center mx-auto">
-            <x-text-gradient>Deals - Bundle up your favorites</x-text-gradient>
+            <x-text-gradient class="text-xl font-medium">Deals - Bundle up your favorites</x-text-gradient>
 
             <!-- Title -->
             <div class="mt-5 max-w-3xl mx-auto">
@@ -591,9 +507,9 @@
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
                       Save up to 15% compared to individual prices!
                     </span>
-                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
+                    <x-button.link-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </x-button.home-button>
+                    </x-button.link-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -629,9 +545,9 @@
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
                       Perfect for sharing with family or friends!
                     </span>
-                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
+                    <x-button.link-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </x-button.home-button>
+                    </x-button.link-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -668,9 +584,9 @@
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
                       Everything you need for a quick, satisfying breakfast.
                     </span>
-                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
+                    <x-button.link-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </x-button.home-button>
+                    </x-button.link-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -707,9 +623,9 @@
                     <span class="inline-flex justify-center italic pt-3 text-sm text-gray-800">
                       Save time and money with our complete care pack.
                     </span>
-                    <x-button.home-button class="w-full py-3 inline-flex justify-center">
+                    <x-button.link-button class="w-full py-3 inline-flex justify-center">
                       Sign up
-                    </x-button.home-button>
+                    </x-button.link-button>
                   </div>
                 </div>
                 <!-- End Card -->
@@ -723,7 +639,7 @@
     </div>
     <!-- End Hero -->
     <!-- Contact -->
-    <div id="contact">
+    <div id="contact" class="pt-16">
       <div class="max-w-5xl px-4 xl:px-0 py-12 lg:py-20 mx-auto">
         <!-- Title -->
         <div class="max-w-3xl mb-10 lg:mb-14">
@@ -781,14 +697,14 @@
                 </span>
 
                 <p class="mt-5">
-                  <x-button.home-button>Submit
+                  <x-button.link-button>Submit
                     <svg class="shrink-0 size-4 transition group-hover:translate-x-0.5 group-focus:translate-x-0.5"
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </x-button.home-button>
+                  </x-button.link-button>
                 </p>
               </div>
             </form>
@@ -864,64 +780,9 @@
   </div>
   <!-- End Clients -->
   <div class="bg-slate-300 px-4 md:px-6 lg:px-8">
-    <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-      <!-- Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
-        <div class="flex overflow-hidden items-center justify-center md:justify-start">
-          <a href="#">
-            <!-- Logo -->
-            <img src="{{ asset('images/logo.png') }}" alt="Store Logo" class="h-16 w-26">
-            <!-- End of Logo -->
-            <div class="ms-1 sm:ms-2"> </div>
-          </a>
-        </div>
-        <!-- End Col -->
-
-        <ul class="text-center">
-          <x-link.footer-link href="#about">About</x-link.footer-link>
-          <x-link.footer-link href="#products">Products</x-link.footer-link>
-          <x-link.footer-link href="#deals">Deals</x-link.footer-link>
-          <x-link.footer-link href="#contact">Contact</x-link.footer-link>
-        </ul>
-        <!-- End Col -->
-
-        <!-- Social Brands -->
-        <div class="flex justify-center md:justify-end md:text-end space-x-2">
-          <x-link.social-link>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-instagram" viewBox="0 0 16 16">
-              <path
-                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-            </svg>
-          </x-link.social-link>
-          <x-link.social-link>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-facebook" viewBox="0 0 16 16">
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-            </svg>
-          </x-link.social-link>
-          <x-link.social-link>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-youtube" viewBox="0 0 16 16">
-              <path
-                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
-            </svg>
-          </x-link.social-link>
-          <x-link.social-link>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="shrink-0 size-5 text-gray-800 hover:text-white bi bi-tiktok" viewBox="0 0 16 16">
-              <path
-                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
-            </svg>
-          </x-link.social-link>
-        </div>
-        <!-- End Social Brands -->
-      </div>
-      <!-- End Grid -->
-    </footer>
+    <!-- ========== Footer ========== -->
+    <x-footer />
+    <!-- ========== End Footer ========== -->
   </div>
 
-</body>
-
-</html>
+</x-layouts.app>

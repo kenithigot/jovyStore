@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Button;
+namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class HomeButton extends Component
+class Navbar extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class HomeButton extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.button.home-button');
+        return view('components.navbar');
     }
 }
