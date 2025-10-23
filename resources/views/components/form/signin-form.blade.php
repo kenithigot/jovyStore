@@ -1,10 +1,13 @@
-<form>
+<form action="{{ route('userSignin') }}" method="POST">
     @csrf
     <div class="grid">
         <!-- Form Group -->
         <div class="relative">
             <x-input.input type="email" id="email" name="email" placeholder="Email address" />
             <x-input.input-label for="email">Email address</x-input.input-label>
+            @error('email')
+                <p class="text-sm text-red-500 mt-1">{{ $message }}</p>
+            @enderror
         </div>
         <!-- End Form Group -->
 
@@ -33,6 +36,9 @@
                     </circle>
                 </svg>
             </button>
+            @error('password')
+                <p class="text-sm text-red-500 mt-1">{{ $message }}</p>
+            @enderror
         </div>
         <!-- End Form Group -->
 
@@ -40,13 +46,14 @@
         <div class="flex items-center justify-end pb-8">
             <div class="">
                 <a class="text-sm font-medium text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline"
-                    href="{{  route('dashboard') }}">
+                    href="{{  route('forgot-password.forgotindex') }}">
                     Forgot Password?
                 </a>
             </div>
         </div>
         <!-- End Forgot Password -->
 
-        <x-button.link-button type="submit" class="w-full justify-center py-3">Sign in</x-button.link-button>
+        <x-button.primary-button type="submit" class="w-full justify-center py-3">Sign
+            in</x-button.primary-button>
     </div>
 </form>

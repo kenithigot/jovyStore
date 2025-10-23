@@ -1,19 +1,61 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\TestingController;
+use App\Http\Controllers\Auth\RegisterUserController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
 
 Route::view('/', 'home')->name('home');
 
 Route::middleware(['guest'])->group(function () {
 
     // Sign In route
-    Route::view('/signin', 'auth.signup')->name('signin');
-    Route::view('/testSidebar', 'admin.dashboard')->name('dashboard');
+    Route::get('/signin', [LoginController::class, 'userLoginIndex'])->name('userLoginIndex');
+    Route::post('/signin', [LoginController::class, 'userSignin'])->name('userSignin');
 
+    // Sign Up route
+    Route::get('/register', [RegisterUserController::class, 'showRegistrationForm'])->name('showRegistrationForm');
+    Route::post('/register', [RegisterUserController::class, 'registration'])->name('registration');
 
-    Route::get('/product', [ProductController::class, 'index'])->name('product');
+    //Register account verification route
+    Route::get('/register/verification', [RegisterUserController::class, 'registerVerification'])->name('registerVerification');
+    Route::post('/register/verification', [RegisterUserController::class, 'verifyConfirm'])->name('verifyConfirm');
+
+    // Forgot Password Grouping Route
+    Route::prefix('forgot-password')->name('forgot-password.')->group(function () {
+
+        // Forgot Password Route
+        Route::get('/', [ForgotPasswordController::class, 'forgotindex'])->name('forgotindex');
+        Route::post('/', [ForgotPasswordController::class, 'forgotSend'])->name('forgotSend');
+
+        // Forgot Password Verification
+        Route::get('/verification/email/{email}', [ForgotPasswordController::class, 'verificationIndex'])->name('verificationIndex');
+        Route::post('/verification/email/{email}', [ForgotPasswordController::class, 'verificationSend'])->name('verificationSend');
+
+        // Reset Password/Confirm Password route
+        Route::get('/reset-password/email/{email}', [ForgotPasswordController::class, 'resetPasswordIndex'])->name('resetPasswordIndex');
+        Route::post('/reset-password/email/{email}', [ForgotPasswordController::class, 'resetPasswordSend'])->name('resetPasswordSend');
+
+    });
+
+    // Route::view('/signin/successful', 'auth.loginSuccess')->name('loginSuccess');
 });
+
+Route::middleware(['auth'])->group(function () {
+    Route::view('/dashboard', 'admin.index')->name('index');
+
+    // Product routes
+    Route::prefix('product')->name('product.')->group(function () {
+        Route::get('/', [ProductController::class, 'index'])->name('index');
+        Route::get('/add', [ProductController::class, 'add'])->name('add');
+    });
+
+    Route::post('/logout', action: [LoginController::class, 'userLogout'])->name('userLogout');
+
+});
+
+
 
 
