@@ -11,16 +11,9 @@
             {{ $slot }}
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="w-full border-t border-gray-200 bg-white py-4">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs text-gray-600">
-            <p>© 2025 Preline Labs.</p>
-            <ul class="flex items-center space-x-3">
-                <li><a href="#" class="underline hover:text-gray-800">X (Twitter)</a></li>
-                <li><a href="#" class="underline hover:text-gray-800">Dribbble</a></li>
-                <li><a href="#" class="underline hover:text-gray-800">Github</a></li>
-            </ul>
+    <div class="lg:pl-65 absolute bottom-0 w-full bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400">
+        <div class="flex items-center justify-center">
+            <x-layouts.admin.footer />
         </div>
-    </footer>
+    </div>
 </div>
