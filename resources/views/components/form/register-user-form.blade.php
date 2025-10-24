@@ -1,4 +1,4 @@
-<form action="{{ route('registration') }}" method="POST">
+<form action="{{ route('register.registration') }}" method="POST">
     @csrf
     <div class="grid lg:grid-cols-2 gap-4 space-y-2">
 

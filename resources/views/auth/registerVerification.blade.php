@@ -20,7 +20,7 @@
                         <div class="mt-5">
                             <!-- Form -->
                             @if(!empty($email))
-                                <form action="{{ route('verifyConfirm') }}" method="POST">
+                                <form action="{{ route('register.verifyConfirm') }}" method="POST">
                                     @csrf
                                     <div class="grid mx-auto gap-4 space-y-2">
                                         <input type="hidden" id="email" name="email" value="{{ $email }}">

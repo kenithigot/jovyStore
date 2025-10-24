@@ -13,7 +13,7 @@
                             <p class="mt-2 text-sm text-gray-600">
                                 Don't have an account yet?
                                 <a class="font-medium text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline"
-                                    href="{{ route('showRegistrationForm') }}">
+                                    href="{{ route('register.showRegistrationForm') }}">
                                     Sign Up
                                 </a>
                             </p>

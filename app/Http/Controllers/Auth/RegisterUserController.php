@@ -29,7 +29,7 @@ class RegisterUserController extends Controller
                 'lastName' => 'required|string|max:255',
                 'phoneNum' => 'required|string|max:255',
                 'address' => 'required|string|max:255',
-                'emailAddress' => 'required|email|unique:users,email',
+                'emailAddress' => 'required|email',
                 'password' => 'required|min:6',
             ],
             [],
@@ -42,6 +42,10 @@ class RegisterUserController extends Controller
                 'password' => 'Password',
             ]
         );
+
+        if(User::where('email', $request->emailAddress)->exists()) {
+            return redirect()->back()->with('error', 'Duplicate email detected. Please use another email.');
+        }
 
         // Generate random 4-digit verification code
         $randomNum = rand(1000, 9999);
@@ -67,7 +71,7 @@ class RegisterUserController extends Controller
 
         // Redirect to verification page and store email in session
         return redirect()
-            ->route('registerVerification', ['email' => $user->email])
+            ->route('register.registerVerification', ['email' => $user->email])
             ->with('email', $user->email);
     }
 

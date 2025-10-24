@@ -15,13 +15,17 @@ Route::middleware(['guest'])->group(function () {
     Route::get('/signin', [LoginController::class, 'userLoginIndex'])->name('userLoginIndex');
     Route::post('/signin', [LoginController::class, 'userSignin'])->name('userSignin');
 
-    // Sign Up route
-    Route::get('/register', [RegisterUserController::class, 'showRegistrationForm'])->name('showRegistrationForm');
-    Route::post('/register', [RegisterUserController::class, 'registration'])->name('registration');
+    // Register User Grouping Route
+    Route::prefix('register')->name('register.')->group(function () {
 
-    //Register account verification route
-    Route::get('/register/verification', [RegisterUserController::class, 'registerVerification'])->name('registerVerification');
-    Route::post('/register/verification', [RegisterUserController::class, 'verifyConfirm'])->name('verifyConfirm');
+        // Sign Up route
+        Route::get('/', [RegisterUserController::class, 'showRegistrationForm'])->name('showRegistrationForm');
+        Route::post('/', [RegisterUserController::class, 'registration'])->name('registration');
+
+        //Register account verification route
+        Route::get('/verification', [RegisterUserController::class, 'registerVerification'])->name('registerVerification');
+        Route::post('/verification', [RegisterUserController::class, 'verifyConfirm'])->name('verifyConfirm');
+    });
 
     // Forgot Password Grouping Route
     Route::prefix('forgot-password')->name('forgot-password.')->group(function () {
