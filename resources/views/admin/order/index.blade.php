@@ -1,10 +1,11 @@
-<x-layouts.app title="Dashboard - Jovy's Store">
+<x-layouts.app title="Order - Jovy's Store">
 
     <x-layouts.admin.layout>
         <!-- ========== MOBILE SIZE BREADCRUMB ========== -->
         <div class="block lg:hidden">
             <x-layouts.admin.breadcrumb :links="[
         ['label' => 'Dashboard', 'url' => route('index')],
+        ['label' => 'Orders', 'url' => route('order.index')]
     ]" />
         </div>
         <!-- ========== END MOBILE SIZE BREADCRUMB ========== -->
@@ -15,10 +16,10 @@
             <div class="hidden lg:block">
                 <x-layouts.admin.desktop-breadcrumb :links="[
         ['label' => 'Dashboard', 'url' => route('index')],
+        ['label' => 'Orders', 'url' => route('order.index')]
     ]" />
             </div>
             <div class="py-3">
-                test
             </div>
 
         </x-layouts.admin.content>
