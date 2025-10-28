@@ -4,8 +4,8 @@
         <!-- ========== MOBILE SIZE BREADCRUMB ========== -->
         <div class="block lg:hidden">
             <x-layouts.admin.breadcrumb :links="[
-        ['label' => 'Dashboard', 'url' => route('index')],
-        ['label' => 'Products', 'url' => route('product.index')]
+        ['label' => 'Dashboard', 'url' => route('admin.index')],
+        ['label' => 'Products', 'url' => route('admin.product.index')]
     ]" />
         </div>
         <!-- ========== END MOBILE SIZE BREADCRUMB ========== -->
@@ -15,15 +15,13 @@
 
             <div class="hidden lg:block">
                 <x-layouts.admin.desktop-breadcrumb :links="[
-        ['label' => 'Dashboard', 'url' => route('index')],
-        ['label' => 'Products', 'url' => route('product.index')]
+        ['label' => 'Dashboard', 'url' => route('admin.index')],
+        ['label' => 'Products', 'url' => route('admin.product.index')]
     ]" />
             </div>
-
-
             <div class="py-3">
                 <div class="flex flex-row gap-x-3">
-                    <a href="{{ route('product.add') }}">
+                    <a href="{{ route('admin.product.add') }}">
                         <x-button.primary-button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-cart-plus" viewBox="0 0 16 16">

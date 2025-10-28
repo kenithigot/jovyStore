@@ -4,7 +4,7 @@
         <!-- ========== MOBILE SIZE BREADCRUMB ========== -->
         <div class="block lg:hidden">
             <x-layouts.admin.breadcrumb :links="[
-        ['label' => 'Dashboard', 'url' => route('index')],
+        ['label' => 'Dashboard', 'url' => route('admin.index')],
     ]" />
         </div>
         <!-- ========== END MOBILE SIZE BREADCRUMB ========== -->
@@ -14,7 +14,7 @@
 
             <div class="hidden lg:block">
                 <x-layouts.admin.desktop-breadcrumb :links="[
-        ['label' => 'Dashboard', 'url' => route('index')],
+        ['label' => 'Dashboard', 'url' => route('admin.index')],
     ]" />
             </div>
             <div class="py-3">

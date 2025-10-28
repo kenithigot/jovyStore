@@ -43,8 +43,12 @@ class LoginController extends Controller
 
             // Authentication passed, regenerate session
             $request->session()->regenerate();
-            // return redirect()->route('loginSuccess');
-            return back()->with('loginSuccess', true);
+
+            return match ($user->user_role) {
+                'admin' => redirect()->route('admin.index'),
+                'user' => redirect()->route('home'),
+                default => redirect()->route('home')
+            };
         }
 
         // Authentication failed, redirect back with error

@@ -13,7 +13,7 @@
         <div class="px-6 pt-4 flex items-center justify-center">
             <!-- Logo -->
             <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
-                href="{{ route('index') }}" aria-label="Preline">
+                href="{{ route('admin.index') }}" aria-label="Home">
                 <img src="{{ asset('images/logo.png') }}" alt="Store Logo" class="h-15 w-24">
             </a>
             <!-- End Logo -->
@@ -29,7 +29,7 @@
             <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
                 <ul class="flex flex-col space-y-2">
                     <li>
-                        <x-link.sidebar-link href="{{ route('index') }}" pattern="dashboard*">
+                        <x-link.sidebar-link href="{{ route('admin.index') }}" pattern="dashboard*">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-house-door-fill size-5" viewBox="0 0 16 16">
                                 <path
@@ -40,7 +40,7 @@
                     </li>
 
                     <li>
-                        <x-link.sidebar-link href="{{ route('product.index') }}" pattern="product*">
+                        <x-link.sidebar-link href="{{ route('admin.product.index') }}" pattern="product*">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-box-fill size-4" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -51,7 +51,7 @@
                     </li>
 
                     <li>
-                        <x-link.sidebar-link href="{{ route('order.index') }}" pattern="order*">
+                        <x-link.sidebar-link href="{{ route('admin.order.index') }}" pattern="order*">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-cart-fill size-5" viewBox="0 0 16 16">
                                 <path
@@ -62,7 +62,7 @@
                     </li>
 
                     <li>
-                        <x-link.sidebar-link href="{{ route('customer.index') }}" pattern="customer*">
+                        <x-link.sidebar-link href="{{ route('admin.customer.index') }}" pattern="customer*">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-people-fill size-4" viewBox="0 0 16 16">
                                 <path
@@ -73,7 +73,7 @@
                     </li>
 
                     <li>
-                        <x-link.sidebar-link href="{{ route('report.index') }}" pattern="report*">
+                        <x-link.sidebar-link href="{{ route('admin.report.index') }}" pattern="report*">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill size-5" viewBox="0 0 16 16">
                                 <path
@@ -84,7 +84,7 @@
                     </li>
 
                     <li>
-                        <x-link.sidebar-link href="{{ route('messages.index') }}" pattern="messages*">
+                        <x-link.sidebar-link href="{{ route('admin.messages.index') }}" pattern="messages*">
                             <div class="relative flex items-center gap-x-3.5">
                                 <!-- Icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -107,7 +107,7 @@
                     </li>
 
                     <li>
-                        <x-link.sidebar-link href="{{ route('settings.index') }}" pattern="settings*">
+                        <x-link.sidebar-link href="{{ route('admin.settings.index') }}" pattern="settings*">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-gear-fill size-5" viewBox="0 0 16 16">
                                 <path

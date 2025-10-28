@@ -6,7 +6,7 @@
             <div class="me-5 lg:me-0 lg:hidden">
                 <!-- Logo -->
                 <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
-                    href="{{ route('index') }}">
+                    href="{{ route('admin.index') }}">
                     <img src="{{ asset('images/logo.png') }}" alt="Store Logo" class="h-16 w-26">
                 </a>
                 <!-- End Logo -->
