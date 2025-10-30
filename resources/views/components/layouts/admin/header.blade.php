@@ -1,5 +1,5 @@
 <header
-    class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-48 w-full bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400 border-b border-gray-200 text-sm py-4 lg:ps-65">
+    class="sticky top-0 inset-x-0 flex md:justify-start z-48 w-full bg-gradient-to-l from-blue-500 via-blue-300 to-blue-400 border-b border-gray-200 text-sm py-4 lg:ps-65">
     <nav class="px-3 sm:px-5 flex basis-full items-center justify-between w-full mx-auto">
 
         <div class="w-full flex items-center ms-auto justify-between lg:justify-end gap-x-1 md:gap-x-1">
